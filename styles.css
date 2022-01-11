@@ -1,0 +1,235 @@
+            body {
+                margin: 0;
+                background-color: #C91F3B;
+            }
+            /* INICIO DO MENU */
+            
+            img {
+                border-radius: 30px;
+                margin: 0;
+                padding: 10px;
+            }
+            
+            ul {
+                list-style: none;
+                padding: 0;
+                font-family: 'Sarala', sans-serif;
+                overflow: hidden;
+                transition: all 0.4s;
+                margin-right: 150px;
+            }
+            
+            nav {
+                padding: 0 20px;
+                color: #FFFFFF;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: solid 1.5px #FFFFFF;
+            }
+            
+            nav,
+            ul {
+                display: flex;
+                flex-direction: row;
+            }
+            
+            li {
+                padding: 0 20px;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
+            
+            .button:hover {
+                cursor: pointer;
+                opacity: 0.8;
+                background-color: rgb(53, 53, 53);
+                border-radius: 20px;
+            }
+            
+            .button {
+                background-color: transparent;
+                border: none;
+                color: #FFF;
+                font-size: 36px;
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                display: none;
+            }
+            
+            .button:focus~ul {
+                height: 260px;
+            }
+            /* FIM DO MENU */
+            /* INICIO DO CONTEUDO PRINCIPAL */
+            
+            .conteudo {
+                display: flex;
+                margin: 0;
+                padding: 0;
+                flex-direction: row;
+            }
+            
+            .escrito {
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .local {
+                margin-left: 23rem;
+                background: #ECD6C4;
+                box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 20px;
+                width: 11.56rem;
+                height: 4.1rem;
+                font-size: 1.5rem;
+                text-align: center;
+                border-bottom-style: none;
+                border: none;
+                outline: 0;
+            }
+            
+            .local:hover {
+                background-color: gray;
+                color: #FFFFFF;
+            }
+            
+            .titulo1 {
+                font-size: 4rem;
+                font-family: 'Righteous', sans-serif;
+                color: #FFF2E7;
+                width: 19.25rem;
+                margin-left: 23rem;
+                margin-bottom: 0;
+                margin-top: 7rem;
+            }
+            
+            .cacamba {
+                border-radius: 104px;
+                width: 32.5rem;
+                height: 18.89rem;
+                margin-left: 12.5rem;
+                margin-top: 6rem;
+            }
+            
+            .paragrafo {
+                margin-left: 23rem;
+                font-size: 1.5rem;
+                color: #ECD6C4;
+                width: 34.06rem;
+                font-family: 'Sarala', sans-serif;
+                margin-top: 0;
+            }
+            
+            .conteudo2 {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                border-bottom: 1.5px solid #FFFFFF;
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+            
+            .linha2 {
+                margin-left: 51.4rem;
+                display: flex;
+                border-bottom: 1.5px solid #FFFFFF;
+                width: 17.253rem;
+            }
+            
+            h3 {
+                font-family: 'Righteous', sans-serif;
+                font-size: 1.5rem;
+                color: #FFF2E7;
+            }
+            
+            .frases {
+                color: #ECD6C4;
+                font-size: 1.125rem;
+                font-family: 'Sarala';
+            }
+            
+            footer {
+                text-align: center;
+                font-size: 2rem;
+                font-family: 'Righteous';
+                color: #FFFFFF;
+                margin: 0;
+                padding: 0;
+            }
+            
+            a {
+                text-decoration: none;
+                color: #FFF2E7;
+            }
+            /* FIM DO CONTEUDO PRINCIPAL */
+            /* CONFIG DO MEDIA PARA O MENU INICIO */
+            
+            @media (max-width: 860px) {
+                nav,
+                ul {
+                    flex-direction: column;
+                    align-items: unset;
+                }
+                ul {
+                    text-align: center;
+                    margin: 0;
+                    height: 0;
+                }
+                nav {
+                    padding: 0;
+                    align-items: flex-start;
+                }
+                .button {
+                    display: flex;
+                }
+                li,
+                ul {
+                    width: 100%;
+                    padding-left: 0;
+                }
+                .logo {
+                    margin: 10px;
+                }
+                /* FIM DA CONFIG MEDIA PARA O MENU */
+                /* INICIO DO CONTEUDO PRINCIPAL */
+                .escrito {
+                    padding-left: 20px;
+                }
+                .titulo1 {
+                    margin-left: 25px;
+                    margin-top: 30px;
+                }
+                .paragrafo {
+                    margin-left: 0;
+                    width: auto;
+                }
+                .local {
+                    margin-left: 60px;
+                }
+                .local:hover {
+                    background-color: #ECD6C4;
+                    color: black
+                }
+                .linha2 {
+                    margin: 38.5px;
+                }
+                footer {
+                    font-size: 20px;
+                }
+                .cacamba {
+                    position: relative;
+                    margin: 0;
+                    width: 15rem;
+                    height: 8.8rem;
+                    left: 48px;
+                    top: 20px;
+                }
+                .conteudo {
+                    display: flex;
+                    flex-direction: column;
+                }
+                .button {
+                    padding-top: 25px;
+                }
+                /* FIM DO CONTEUDO PRINCIPAL */
+            }
